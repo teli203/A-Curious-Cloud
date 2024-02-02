@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    font-family: 'Cinzel', serif;
+}
+
+.nav {
+    height: 51px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;width: 100vw;
+    background-color: white;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+
+}
