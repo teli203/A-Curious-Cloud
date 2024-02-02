@@ -105,5 +105,53 @@ body {
       }
     }
 
+    /* MAIN */
+
+.logout-div {
+    display: none;
+  }
+  
+  p {
+    font-family: 'Bodoni Moda', serif;
+  }
+  
+  main {
+    margin-top: 100px;
+  }
+  
+  input,
+  button,
+  select,
+  textarea {
+    height: 32px;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    border: none;
+    width: 140px;
+  }
+  
+  input {
+    width: 136px;
+  }
+
+  button {
+    background-color: black;
+    color: #fff;
+    transition: 0.2s;
+    transition-delay: 0.2s;
+  }
+  
+  button:active {
+    box-shadow: 0 8px 17px 0 rgba(157, 156, 156, 0.2);
+    transition-delay: 0s;
+  }
+  
+  button:hover,
+  select:hover,
+  .nav__hamburger,
+  .post {
+    cursor: pointer;
+  }
+
   
   
