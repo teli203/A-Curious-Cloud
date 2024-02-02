@@ -26,4 +26,42 @@ body {
     text-decoration: none;
     color: black;
   }
+
+  .nav__menu div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  
+  .nav__menu li:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
+  .nav__hamburger {
+    width: 30px;
+    height: 21px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    top: 16px;
+    right: 32px;
+  }
+  
+  .nav__hamburger__line {
+    height: 1px;
+    width: 100%;
+    background-color: black;
+    border-radius: 1px;
+    transition: all ease-in-out 0.2s;
+  }
+  
+  #register-form,
+  #login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
   
