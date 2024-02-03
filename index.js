@@ -31,3 +31,21 @@ const connectDB = async () => {
     } catch (error) {}
 };
 
+connectDB().then(() => {
+    app.listen(PORT, () => {
+        console.log(`Listening on port ${PORT}`);
+    });
+});
+
+// MongoDB Models //
+
+const Post = mongoose.model(
+    'Post',
+    new mongoose.Schema({
+        title: String,
+        content: String,
+        imageUrl: String,
+        author: String,
+        timestamp: String,
+    })
+)
