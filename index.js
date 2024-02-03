@@ -90,4 +90,29 @@ const authenticateJWT = (req, res, next) => {
     }
 };
 
+// User Registration //
+
+app.post('/register', async (req, res) => {
+    const {username, password, role} = req.body;
+
+    // Sanitze and validate user input //
+    const sanitizedUsername = validator.escape( username);
+    const sanitizedPassword = validator.escape( password);
+
+    // Ensure valid input data //
+    if(!sanitizedUsername || !sanitizedPassword) {
+        return res.status(400).send({error: 'Invalid input data' });
+    }
+
+    const hashedPassword = await bcrypt .hash(sanitizedPassword, 10);
+
+    const newUser = new User({
+        username: sanitizedUsername,
+        password: sanitizedPassword,
+        role,
+    });
+
+    await 
+});
+
 
