@@ -62,3 +62,32 @@ const User = mongoose.model(
 
 // Middleware //
 
+app.use(cors({ origin: '*' }));
+app.use(bodyParser.json());
+app.use(express.static(path.join(__dirname)));
+
+app.get('/', (req, res)  => {
+    res.sendFile(path.join(__dirname, 'index.html'));
+});
+
+// JWT Authentication Middleware //
+
+const authenticateJWT = (req, res, next) => {
+    const token = req.headers.authorization.split(' ')[1];
+
+    if (token) {
+        jwt.verify(token, jwtSecret, (err, user) => {
+            if (err) {
+                console.log('JWT Verification Error', err.message);
+                return res.sendStatus(403);
+            }
+            req.user = user;
+            next();
+        });
+    } else{
+        console.log('Token is missing');
+        res.sendStatus(401);
+    }
+};
+
+
