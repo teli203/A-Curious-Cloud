@@ -2,8 +2,8 @@
 
 // Get stored data
 
-let storedtoken = localStorage.getitem('jwtToken');
-let usrname = localStorage.getitem('username');
+let storedtoken = localStorage.getItem('jwtToken');
+let storedUsername = localStorage.getItem('username');
 
 // Set the username in the HTML //
 
@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
   fetchPosts(baseUrl);
 
   if (storedToken) {
-    const storedRole = localStorage.getItem('userRole');
+    const storedRole = localStorage.getItem('userRole'); // Corrected method name
     if (storedRole == 'admin') {
       showAdminFeatures();
     }
