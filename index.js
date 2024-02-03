@@ -48,4 +48,17 @@ const Post = mongoose.model(
         author: String,
         timestamp: String,
     })
-)
+);
+
+const User = mongoose.model(
+    'User',
+    new mongoose.Schema({
+        username: String,
+        password: String,
+        imageUrl: String,
+        role: String,
+        })
+);
+
+// Middleware //
+
