@@ -2,7 +2,7 @@
 
 // Get stored data
 
-let storedtoken = localStorage.getItem('jwtToken');
+let storedToken = localStorage.getItem('jwtToken');
 let storedUsername = localStorage.getItem('username');
 
 // Set the username in the HTML //
