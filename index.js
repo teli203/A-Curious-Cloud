@@ -202,8 +202,7 @@ app.post('/login', async (req, res) => {
         return res.status(500).send('Internal Server Error');
       }
   
-      // Replace placeholders in th HTML with actual post data /
-      /
+      // Replace placeholders in th HTML with actual post data //
       const postDetailHtml = data
         .replace(/\${post.imageUrl}/g, post.imageUrl)
         .replace(/\${post.title}/g, post.title)
@@ -231,7 +230,7 @@ app.post('/login', async (req, res) => {
   });
   
   // Update Post //
-  
+
   app.put('/posts/:id', authenticateJWT, async (req, res) => {
     const { title, content } = req.body;
     const postId = req.params.id;
