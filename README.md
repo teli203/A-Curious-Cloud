@@ -1,4 +1,4 @@
-
+<img width="1438" alt="Screenshot 2024-02-11 at 3 32 09 PM" src="https://github.com/teli203/A-Curious-Cloud/assets/68035449/ee7c0e30-1883-436a-8fe5-4646b30ad13f">
  
 
 Crafted with HTML, CSS, and JavaScript, this engaging webpage exemplifies modern frontend development for a dynamic blog site. This code example is the blue print. From its sleek layout to its responsive design, every aspect is designed to captivate users and deliver an immersive browsing experience. Leveraging the latest web technologies, the site seamlessly adapts to various screen sizes, ensuring optimal performance across devices. With a focus on user engagement and visual appeal, this project showcases frontend development only.
